@@ -5,7 +5,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: muzumsu
-      MONGO_INITDB_DATABASE: WinMeetDb      
+      MONGO_INITDB_DATABASE: WinMeetDb   
+      MONGO_REPLICA_HOST: host.docker.internal   
     ports:
       - 27017:27017
     volumes:
